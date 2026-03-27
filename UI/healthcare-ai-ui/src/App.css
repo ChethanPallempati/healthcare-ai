@@ -1,0 +1,255 @@
+body {
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), rgba(242, 245, 247, 0.75) 30%, transparent 55%),
+    linear-gradient(180deg, #f4f6f8 0%, #edf1f4 100%);
+  margin: 0;
+  color: #17212b;
+}
+
+.appShell {
+  min-height: 100vh;
+  padding: 48px 20px;
+  box-sizing: border-box;
+}
+
+.appFrame {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.centered,
+.panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+}
+
+.centered {
+  max-width: 430px;
+  margin: 72px auto;
+  padding: 36px 32px;
+}
+
+.panel {
+  padding: 28px;
+  margin-top: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6c7a89;
+}
+
+.subtleText,
+.sectionText {
+  color: #61707f;
+  line-height: 1.6;
+}
+
+.subtleText {
+  margin: 14px 0 0;
+}
+
+.username {
+  font-weight: 600;
+  color: #2f3e4e;
+  background: rgba(239, 243, 247, 0.9);
+  border-radius: 999px;
+  padding: 10px 14px;
+}
+
+.logoutBtn {
+  padding: 10px 16px;
+  background-color: #f4f7fa;
+  color: #203040;
+  border: 1px solid rgba(32, 48, 64, 0.08);
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #e9eef3;
+  transform: translateY(-1px);
+}
+
+.loginForm,
+.formGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 8px;
+}
+
+.fieldLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4f6072;
+}
+
+.select, .input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(31, 41, 55, 0.08);
+  background: rgba(248, 250, 252, 0.92);
+  box-sizing: border-box;
+  outline: none;
+  color: #17212b;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.input:focus, .select:focus {
+  border-color: rgba(57, 102, 153, 0.34);
+  box-shadow: 0 0 0 4px rgba(110, 145, 182, 0.12);
+  background: #ffffff;
+}
+
+.button {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: none;
+  background: #1d2733;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #263443;
+  box-shadow: 0 16px 30px rgba(29, 39, 51, 0.14);
+  transform: translateY(-1px);
+}
+
+.errorText {
+  color: #d32f2f;
+  margin-top: 12px;
+  text-align: left;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.historyPanel h3 {
+  margin-bottom: 8px;
+}
+
+.resultCard {
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(250, 252, 253, 0.94), rgba(242, 246, 249, 0.94));
+  border: 1px solid rgba(31, 41, 55, 0.07);
+}
+
+.resultHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.resultDisease {
+  margin: 0;
+  color: #6a7786;
+}
+
+.riskPill {
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: #e8eef4;
+  color: #223140;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.resultStats {
+  display: flex;
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.statBlock {
+  min-width: 110px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 41, 55, 0.06);
+}
+
+.statLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #738293;
+}
+
+p {
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .appShell {
+    padding: 24px 14px;
+  }
+
+  .panel,
+  .centered {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .header,
+  .resultHeader,
+  .headerActions,
+  .resultStats {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logoutBtn {
+    width: 100%;
+  }
+}
