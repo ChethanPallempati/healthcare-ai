@@ -52,33 +52,13 @@ Optional environment variable:
 REACT_APP_API_BASE_URL=http://127.0.0.1:8000
 ```
 
-## Tests
-
-Backend:
-
-```bash
-cd /Users/chetanpallempati/Documents/New project/healthcare-ai/back-end
-pytest -q
-```
-
-Frontend:
-
-```bash
-cd /Users/chetanpallempati/Documents/New project/healthcare-ai/UI/healthcare-ai-ui
-npm test -- --watchAll=false
-npm run build
-```
 
 ## Model training
 
 ### Heart model
 
 The heart model can be retrained locally because the dataset is present at `back-end/app/heart.csv`.
-
-```bash
-cd /Users/chetanpallempati/Documents/New project/healthcare-ai
-python back-end/app/train_heart.py
-```
+end/app/train_heart.py
 
 ### Diabetes model
 
